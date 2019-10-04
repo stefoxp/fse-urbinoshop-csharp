@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Principale.master.cs" Inherits="Principale" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>UrbinoShop</title>
+	<link rel="stylesheet" href="generale.css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <meta name="description" content="Esempio di sito e-commerce in ASP.NET" />
+	    <meta name="keywords" content="ASP.NET, e-commerce, tutorial" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div>
+     <table width="100%" border="0" class="sfondo">
+        <tr>
+            <td>
+				<!-- header visibile -->
+                <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <tr class="sfondo">
+                        <td width="10%" >
+                            <img src="immagini/logo.jpg" alt="I torricini del palazzo ducale di Urbino" />
+                        </td>
+                        <td valign="bottom" colspan="3">
+                            <img src="immagini/logoTesto.gif" alt="Il logo di UrbinoShop" />
+                            <p>ATTENZIONE: questo è solo un esempio a scopo didattico:
+                            non è possibile ordinare nulla</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+							<!-- menu di navigazione -->   
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="index.aspx" class="menu">Home</a>
+                                    </td>
+                                    <td>
+                                        <a href="utente_login.aspx" class="menu">Login</a>
+                                    </td>
+                                    <td>
+                                        <a href="utente_login.aspx?log=out" class="menu">Logout</a>
+                                    </td>
+                                    <td>
+                                        <a href="categorie_catalogo.aspx" class="menu">Categorie</a>
+                                    </td>
+                                    <td>
+                                        <a href="prodotti_ricerca.aspx" class="menu">Ricerca</a>
+                                    </td>
+                                    <td>
+                                        <a href="utente_carrello.aspx" class="menu">Carrello</a>
+                                    </td>
+                                    <td>
+                                        <a href="admin/adminLogin.aspx" class="menu">Amministra</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form id="form1" runat="server" method="POST">
+                <asp:ContentPlaceHolder id="Corpo" runat="server">
+        
+                </asp:ContentPlaceHolder>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <hr>
+                <table border="0">
+                    <tr>
+                        <td>
+                            <a href="mailto:assistenza@urbinoshop.com">Assistenza</a>
+                        </td>
+                        <td>
+                            <a href="chi.html">Chi siamo</a>
+                        </td>
+                        <td>
+                            <a href="mailto:informazioni@urbinoshop.com">Contattaci</a>
+                        </td>
+                        <td>
+                            <a href="#">Path db (disattivato)</a>
+                        </td>
+                        <td width="50%">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10">
+                            Copyright © 1995-2012 UrbinoShop Inc. Tutti i diritti riservati.
+                            Marchi registrati e segni distintivi sono di propriet&agrave; dei rispettivi titolari.
+                            L'uso di questo sito web implica l'accettazione dell'
+                            <a href="accordo.html">Accordo</a>
+                            per gli utenti di UrbinoShop
+                            e delle
+                            <a href="privacy.html">Regole</a>
+                            sulla privacy.
+                        </td>
+                    </tr>                   
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>

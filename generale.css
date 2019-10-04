@@ -1,0 +1,25 @@
+body {
+	background-color: Navy;
+    color: Navy;
+}
+table.sfondo {
+	background-color: #FFFFCC;
+	color: Navy;
+}
+tr.sfondo {
+	background-color: Navy;
+	color: #FFFFCC;
+}
+a.menu:link, a.menu:visited {
+	font-size: x-small;
+	text-decoration : none;
+	font-family : Arial, Helvetica, sans-serif;
+	border-style : outset;
+	padding : 1px;
+	width : 90px;
+	text-align : center;
+	display : block;
+}
+a.menu:hover {
+	border-style : inset;
+}
